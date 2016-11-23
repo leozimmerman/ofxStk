@@ -136,7 +136,16 @@ void ofApp::keyReleased(int key){
     }
 
 }
-
+//--------------------------------------------------------------
+void ofApp::audioOut(float *output, int bufferSize, int nChannels){
+   
+    for (int i = 0; i < bufferSize ; i++) {
+        float value = voicer->tick();
+        output[2*i] = value;
+        output[2*i+1] = value;
+    }
+    
+}
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
 
@@ -172,10 +181,4 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
-void ofApp::audioOut(float *output, int bufferSize, int nChannels){
-    for (int i = 0; i < bufferSize ; i++) {
-        float value = voicer->tick();
-        output[2*i] = value;
-        output[2*i+1] = value;
-    }
-}
+

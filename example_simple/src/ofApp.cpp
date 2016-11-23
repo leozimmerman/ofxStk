@@ -128,12 +128,30 @@ void ofApp::keyReleased(int key){
     }
 
 }
-
+//--------------------------------------------------------------
+void ofApp::audioOut(float *output, int bufferSize, int nChannnels){
+   
+    stk::StkFrames synthFrames(bufferSize,1);
+    synth.tick(synthFrames);
+    
+    for (int i = 0; i < bufferSize; i++) {
+        output[2*i] = synthFrames(i,0);
+        output[2*i+1] =  synthFrames(i,0);
+    }
+    
+}
+//--------------------------------------------------------------
+bool ofApp::noNotesDown(){
+    if (!(aDown || sDown || dDown || fDown || gDown || hDown || jDown || kDown || lDown)) {
+        return true;
+    }else{
+        return false;
+    }
+}
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
 
 }
-
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
 
@@ -166,20 +184,7 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 //--------------------------------------------------------------
 
-void ofApp::audioOut(float *output, int bufferSize, int nChannnels){
-    stk::StkFrames synthFrames(bufferSize,1);
-    synth.tick(synthFrames);
-    for (int i = 0; i < bufferSize; i++) {
-        output[2*i] = synthFrames(i,0);
-        output[2*i+1] =  synthFrames(i,0);
-    }
-}
 
-bool ofApp::noNotesDown(){
-    if (!(aDown || sDown || dDown || fDown || gDown || hDown || jDown || kDown || lDown)) {
-        return true;
-    }else{
-        return false;
-    }
-}
+
+
 
