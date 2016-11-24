@@ -1,0 +1,42 @@
+<group>
+	<ADSR>
+		<attack_ms_>1</attack_ms_>
+		<decay_ms_>113.189</decay_ms_>
+		<sustain>0.0884354</sustain>
+		<release_ms_>109.789</release_ms_>
+		<gain>0.770408</gain>
+		<attack_target>0.505102</attack_target>
+		<octave>1</octave>
+	</ADSR>
+	<Pitch_Env>
+		<attack_ms_>1</attack_ms_>
+		<decay_ms_>4.39966</decay_ms_>
+		<release_ms_>255.974</release_ms_>
+		<target>0.0102041</target>
+		<base_Freq>8411.48</base_Freq>
+	</Pitch_Env>
+<group/>
+<filterCutoff>0.6204</filterCutoff>
+<Sine_ADSR>
+		<attack_ms_>1</attack_ms_>
+		<decay_ms_>55.3946</decay_ms_>
+		<sustain_level>0</sustain_level>
+		<release_ms_>150.585</release_ms_>
+	</Sine_ADSR>
+	<Pitch_ADSR>
+		<attack_ms_>1</attack_ms_>
+		<decay_ms_>7.79932</decay_ms_>
+		<release_ms_>62.1939</release_ms_>
+		<target>0.0595238</target>
+		<base_Freq>1949.49</base_Freq>
+	</Pitch_ADSR>
+	<gain>0.38</gain>
+<Noise_ADSR>
+		<attack_ms_>7.79932</attack_ms_>
+		<decay_ms_>11.199</decay_ms_>
+		<sustain_level>0.0306122</sustain_level>
+		<release_ms_>28.1973</release_ms_>
+	</Noise_ADSR>
+	<LowPass_Cutoff>0.693</LowPass_Cutoff>
+	<HighPass_Cutoff>0.429</HighPass_Cutoff>
+</group>

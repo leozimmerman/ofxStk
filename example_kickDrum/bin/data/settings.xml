@@ -1,0 +1,20 @@
+<group>
+	<ADSR>
+		<attack_ms_>1</attack_ms_>
+		<decay_ms_>113.189</decay_ms_>
+		<sustain>0.0884354</sustain>
+		<release_ms_>109.789</release_ms_>
+		<gain>0.770408</gain>
+		<attack_target>0.505102</attack_target>
+		<octave>1</octave>
+	</ADSR>
+	<Pitch_Env>
+		<attack_ms_>1</attack_ms_>
+		<decay_ms_>4.39966</decay_ms_>
+		<release_ms_>255.974</release_ms_>
+		<target>0.0102041</target>
+		<base_Freq>8411.48</base_Freq>
+	</Pitch_Env>
+<group/>
+<filterCutoff>0.8811</filterCutoff>
+</group>

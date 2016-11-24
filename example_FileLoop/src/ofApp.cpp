@@ -4,7 +4,7 @@
 void ofApp::setup(){
     panel.setup();
     panel.add(frequency.setup("BeatFrequency",.25,-1,1));
-    panel.add(filterCutoff.setup("filter Cutoff",0.0,0.0,.99));
+    panel.add(filterCutoff.setup("filter Cutoff",0.0, 0.0,.99));
     panel.add(chorusDepth.setup("chorusDepth",.01,0,.1));
     panel.add(chorusFrequency.setup("chorusFrequency",500,1,500));
     panel.add(reverbRoomSize.setup("reverbRoomSize",.3,0,1));
